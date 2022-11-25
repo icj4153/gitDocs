@@ -31,7 +31,7 @@ Hanyang University ERICA Team Project
 ### 2주차 (2022-11-24 ~ 2022-12-01)
   - 공통 : branch convention에 맞게 각자 branch 생성 후 commit
   - 김동현 : git 마크다운 활용한 문서화
-	- 김한나 : PR Template 만들기, Action 사용법 조사 및 설정
+  - 김한나 : PR Template 만들기, Action 사용법 조사 및 설정
   - 이다은 : HTML 웹 뼈대 구축
   - 임창준 : Issue Template 만들기, Issue 발행
 ### 3주차 (2022-12-02 ~ 2022-12-09)

@@ -23,13 +23,18 @@ Hanyang University ERICA Team Project
 
  ## 주차별 진행 과정
  ### 1주차 (2022-11-17 ~ 2022-11-23)
- - 주제 선정
- - HTML, CSS 학습
- - branch, commit message convention 설정
- - PR Template, Issue Template 설정
-### 2주차
-
-### 3주차
+ - 공통 : 주제 선정, HTML 학습, git branch convention, commit message convention 학습
+ - 김동현 : HTML 학습
+ - 김한나 : GitHub README 파일 작성 및 주제 구체화
+ - 이다은 : 웹 페이지 구축
+ - 임창준 : Github 생성 후 팀원 초대 및 PR 설정
+### 2주차 (2022-11-24 ~ 2022-12-01)
+  - 공통 : branch convention에 맞게 각자 branch 생성 후 commit
+  - 김동현 : git 마크다운 활용한 문서화
+	- 김한나 : PR Template 만들기, Action 사용법 조사 및 설정
+  - 이다은 : HTML 웹 뼈대 구축
+  - 임창준 : Issue Template 만들기, Issue 발행
+### 3주차 (2022-12-02 ~ 2022-12-09)
 
 
 <br/>

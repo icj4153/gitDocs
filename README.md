@@ -35,7 +35,10 @@ Hanyang University ERICA Team Project
   - 이다은 : HTML 웹 뼈대 구축
   - 임창준 : Issue Template 만들기, Issue 발행
 ### 3주차 (2022-12-02 ~ 2022-12-09)
-
+  - 김동현 : ‘git, github이란?’ 페이지 개발
+  - 김한나 : ‘gitHub으로 협업하는 방법' 페이지 개발
+  - 이다은 : ‘git branch 사용법’ 페이지 개발
+  - 임창준 : ‘오픈소스에 직접 참여하는 방법' 페이지 개발
 
 <br/>
 

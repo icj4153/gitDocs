@@ -67,7 +67,224 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">SubTitle 2-1 Contents</h1>
+                        <h1 class="mt-4">Git</h1>
+                        <h1 class="mt-4">Git이란?</h1>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">소스코드를 효과적으로 관리하기 위해 개발된 분산형 버전 관리 시스템.</h6></li>
+                            <li><h6 class="mt-4">소스 코드 변경 이력을 쉽게 확인할 수 있음.</h6></li>
+                            <li><h6 class="mt-4">특정 시점에 저장된 버전과 비교할 수 있음.</h6></li>
+                        </ul>
+                        <h1 class="mt-4">git 사용법</h1>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">추가</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                             <li>git add <파일명>
+                            </ul>
+                        <div style='text-indent:40px'>
+                        - 특정 파일 staging area에 추가
+                        </div> 
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git add -a
+                           </ul>
+                           <div style='text-indent:40px'>
+                            - 커밋에 파일의 변경 사항 한번에 모두 포함
+                            </div> 
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git commit -m
+                           </ul>
+                           <div style='text-indent:40px'>
+                            - 커밋 생성
+                            </div> 
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git push origin master
+                           </ul>
+                           <div style='text-indent:40px'>
+                            - remote repository에 추가
+                            </div>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">상태 확인</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git —version
+                           </ul>
+                       <div style='text-indent:40px'>
+                       - 버전 확인
+                       </div> 
+                       <ul style='list-style-type:circle;list-style-position:inside'>
+                           <li>git log
+                          </ul>
+                          <div style='text-indent:40px'>
+                           - 변경 이력 확인
+                           </div> 
+                       <ul style='list-style-type:circle;list-style-position:inside'>
+                           <li>git fetch
+                          </ul>
+                          <div style='text-indent:40px'>
+                           - 정보 업데이트
+                           </div> 
+                       <ul style='list-style-type:circle;list-style-position:inside'>
+                           <li>git status
+                          </ul>
+                          <div style='text-indent:40px'>
+                           - 현재 상태 확인
+                           </div>
+                           <ul type="disc">
+                            <li><h6 class="mt-4">Branch</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git branch
+                           </ul>
+                       <div style='text-indent:40px'>
+                       - local 브랜치 목록 확인
+                       </div> 
+                       <ul style='list-style-type:circle;list-style-position:inside'>
+                           <li>git branch <브랜치명>
+                          </ul>
+                          <div style='text-indent:40px'>
+                           - 브랜치 생성
+                           </div> 
+                       <ul style='list-style-type:circle;list-style-position:inside'>
+                           <li>git push origin <브랜치명>
+                          </ul>
+                          <div style='text-indent:40px'>
+                           - 만든 브랜치를 원격 서버에 전송
+                           </div> 
+                       <ul style='list-style-type:circle;list-style-position:inside'>
+                           <li>git push -u <브랜치명>
+                          </ul>
+                          <div style='text-indent:40px'>
+                           - 새 브랜치를 원격 저장소로 push
+                           </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git pull <브랜치명>
+                           </ul>
+                           <div style='text-indent:40px'>
+                            - 원격 저장된 git 프로젝트의 현재 상태 다운 + 현재 위치한 브랜치로 통합
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git checkout master
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 마스터 브랜치로 돌아가기
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git branch -d <브랜치명>
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 로컬 저장소에서 브랜치 삭제
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git push origin —delete <브랜치명>
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 원격 저장소에서 브랜치 삭제
+                        </div> 
+                        <ul type="disc">
+                            <li><h6 class="mt-4">Push</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git push origin master
+                           </ul>
+                           <div style='text-indent:40px'>
+                            - 변경 사항 원격 서버에 업로드
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git push <브랜치명>
+                            </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git push -u <브랜치명>
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 커밋을 원격 서버에 업로드
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git remote add origin <등록된 원격 서버 주소>
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 클라우드 주소 등록 및 발행
+                        </div> 
+                        <ul type="disc">
+                            <li><h6 class="mt-4">저장소</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git init
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 새로운 저장소 생성
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git pull origin master
+                            </ul>
+                        <div style='text-indent:40px'>
+                            - origin에서 코드 가져오기
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git clone <저장할 폴더 이름>
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 원격 저장소에서 코드 가져오기
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git fetch origin
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 원격에서 로컬로 코드 가져오기
+                        </div>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">갱신 및 병합하기</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git pull
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - 원격 저장소의 변경 내용을 현재 디렉토리로 가져오기 + 병합
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git checkout master
+                            </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git merge <브랜치명>
+                            </ul>
+                            <div style='text-indent:40px'>
+                            - master 브랜치로 이동 후, 병합하고자 하는 브랜치 병합
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git checkout <바뀔 브랜치>
+                            </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git reset —hard <타깃 브랜치>
+                            </ul>
+                        <div style='text-indent:40px'>
+                            - 특정 브랜치를 다른 브랜치의 코드로 대체
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git add <파일명>
+                            </ul>
+                        <div style='text-indent:40px'>
+                            - 각 파일 병합
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git diff <브랜치명><타브랜치명>
+                            </ul>
+                        <div style='text-indent:40px'>
+                            - 변경 내용 merge 전에 변경 내용 비교
+                            </div>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">로컬 변경 사항 되돌리기</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git checkout — <파일명>
+                            </ul>
+                        <div style='text-indent:40px'>
+                            - 로컬 변경 사항을 변경 전으로 되돌림
+                            </div>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>git fetch origin
+                            </ul>
+                        <div style='text-indent:40px'>
+                            - 원격에 저장된 git 프로젝트의 현 상태 다운로드
+                            </div>
                     </div>
                 </main>
             </div>

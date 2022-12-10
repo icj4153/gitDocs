@@ -1,0 +1,82 @@
+# Git
+
+# git이란?
+
+- 소스코드를 효과적으로 관리하기 위해 개발된 분산형 버전 관리 시스템.
+- 소스 코드 변경 이력을 쉽게 확인할 수 있음.
+- 특정 시점에 저장된 버전과 비교할 수 있음.
+
+# git 사용법
+
+- 추가
+    - git add <파일명>
+        - 특정 파일 staging area에 추가
+    - git add -a
+        - 커밋에 파일의 변경 사항 한번에 모두 포함
+    - git commit -m <commit message>
+        - 커밋 생성
+    - git push origin master
+        - remote repository에 추가
+- 상태 확인
+    - git —version
+        - 버전 확인
+    - git log
+        - 변경 이력 확인
+    - git remote -v
+        - 원격 저장소 확인
+    - git fetch
+        - 정보 업데이트
+    - git status
+        - 현재 상태 확인
+- Branch
+    - git branch
+        - local 브랜치 목록 확인
+    - git branch <브랜치명>
+        - 브랜치 생성
+    - git push origin <브랜치명>
+        - 만든 브랜치를 원격 서버에 전송
+    - git push -u <remote><브랜치명>
+        - 새 브랜치를 원격 저장소로 push
+    - git pull <remote><브랜치명>
+        - 원격 저장된 git 프로젝트의 현재 상태 다운 + 현재 위치한 브랜치로 통합
+    - git checkout master
+        - 마스터 브랜치로 돌아가기
+    - git branch -d <브랜치명>
+        - 로컬 저장소에서 브랜치 삭제
+    - git push origin —delete <브랜치명>
+        - 원격 저장소에서 브랜치 삭제
+- Push
+    - git push origin master
+        - 변경 사항 원격 서버에 업로드
+    - git push <remote><브랜치명>
+    - git push -u <remote><브랜치명>
+        - 커밋을 원격 서버에 업로드
+    - git remote add origin <등록된 원격 서버 주소>
+        - 클라우드 주소 등록 및 발행
+- 저장소
+    - git init
+        - 새로운 저장소 생성
+    - git pull origin master
+        - origin에서 코드 가져오기
+    - git clone <url><저장할 폴더 이름>
+        - 원격 저장소에서 코드 가져오기
+    - git fetch origin
+        - 원격에서 로컬로 코드 가져오기
+- 갱신 및 병합하기
+    - git pull
+        - 원격 저장소의 변경 내용을 현재 디렉토리로 가져오기 + 병합
+    - git checkout master
+    - git merge <브랜치명>
+        - master 브랜치로 이동 후, 병합하고자 하는 브랜치 병합
+    - git checkout <바뀔 브랜치>
+    - git reset —hard <타깃 브랜치>
+        - 특정 브랜치를 다른 브랜치의 코드로 대체
+    - git add <파일명>
+        - 각 파일 병합
+    - git diff <브랜치명><타브랜치명>
+        - 변경 내용 merge 전에 변경 내용 비교
+- 로컬 변경 사항 되돌리기
+    - git checkout — <파일명>
+        - 로컬 변경 사항을 변경 전으로 되돌림
+    - git fetch origin
+        - 원격에 저장된 git 프로젝트의 현 상태 다운로드

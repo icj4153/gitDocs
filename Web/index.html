@@ -23,42 +23,41 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Title 1</div>
+                            <div class="sb-sidenav-menu-heading">PROJECT</div>
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"></div>
-                                SubTitle 1
+                                Project Info
                             </a>
-                            <div class="sb-sidenav-menu-heading">Title 2</div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-sidenav-menu-heading">GIT & GITHUB</div>
+                            <a class="nav-link" href="sub2-1.html">
                                 <div class="sb-nav-link-icon"></div>
-                                SubTitle 2
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                git 소개
                             </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="sub2-1.html">First</a>
-                                    <a class="nav-link" href="sub2-2.html">Second</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <a class="nav-link" href="sub2-2.html">
                                 <div class="sb-nav-link-icon"></div>
-                                SubTitle 3
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                github 소개
                             </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link" href="sub3-1.html">First</a>
-                                    <a class="nav-link" href="sub3-2.html">Second</a>
-                                </nav>
-                            </div>
-                            <div class="sb-sidenav-menu-heading">Title 3</div>
-                            <a class="nav-link" href="sub4.html">
+                            <div class="sb-sidenav-menu-heading">BRANCH</div>
+                            <a class="nav-link" href="sub3-1.html">
                                 <div class="sb-nav-link-icon"></div>
-                                SubTitle 4
+                                branch 소개
+                            </a>
+                            <a class="nav-link" href="sub3-2.html">
+                                <div class="sb-nav-link-icon"></div>
+                                branch 종류
+                            </a>
+                            <div class="sb-sidenav-menu-heading">GITHUB 활용법</div>
+                            <a class="nav-link" href="sub4-1.html">
+                                <div class="sb-nav-link-icon"></div>
+                                issue 소개
+                            </a>
+                            <a class="nav-link" href="sub4-1.html">
+                                <div class="sb-nav-link-icon"></div>
+                                PR 소개
                             </a>
                             <a class="nav-link" href="sub5.html">
                                 <div class="sb-nav-link-icon"></div>
-                                SubTitle 5
+                                오픈소스에 기여하기
                             </a>
                         </div>
                     </div>
@@ -66,8 +65,135 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
+
+                    <!-- Header-->
+                    <div class="bg-dark py-5">
+                        <div class="container px-5">
+                            <div class="row gx-5 align-items-center justify-content-center">
+                                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                                    <div class="my-5 text-center text-xl-start">
+                                        <h1 class="display-5 fw-bolder text-white mb-5">Team A - GitDocs</h1>
+                                        <p class="lead fw-normal text-white-50 mb-5">Division of Computer Science</br>
+                                        임창준 김동현 김한나 이다은</p>
+                                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Members Info</a>
+                                            <a class="btn btn-outline-light btn-lg px-4" href="#!">Github link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="./assets/imgs/github_logo.png" alt="..." /></div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">SubTitle 1 Contents</h1>
+                        <section class="py-5" id="features">
+                            <div class="container px-5 my-5">
+                                <div class="row gx-5">
+                                    <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Team Members</h2></div>
+                                    <div class="col-lg-8">
+                                        <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                            <div class="col mb-5 h-100">
+                                                <p class="text-center"><img class="mb-1" src="./assets/imgs/김동현.jpg" height="250" width="200"></p>
+                                                <h2 class="h5">김동현</h2>
+                                                <p class="mb-0">- 'git 소개' & 'github 소개' 페이지 개발</p>
+                                            </div>
+                                            <div class="col mb-5 h-100">
+                                                <p class="text-center"><img class="mb-1" src="./assets/imgs/김한나.jpg" height="250" width="200"></p>
+                                                <h2 class="h5">김한나</h2>
+                                                <p class="mb-0">- github의 issue, PR등을 활용하여 협업하는 방법을 설명한 페이지 개발</p>
+                                            </div>
+                                            <div class="col mb-5 mb-md-0 h-100">
+                                                <p class="text-center"><img class="mb-1" src="./assets/imgs/이다은.jpg" height="250" width="200"></p>
+                                                <h2 class="h5">이다은</h2>
+                                                <p class="mb-0">- 메인 페이지 개발</br>
+                                                    - github의 브랜치 기능을 설명하는 'Branch 소개' & 'Branch 종류' 페이지 개발</p>
+                                            </div>
+                                            <div class="col h-100">
+                                                <p class="text-center"><img class="mb-1" src="./assets/imgs/임창준.jpg" height="250" width="200"></p>
+                                                <h2 class="h5">임창준</h2>
+                                                <p class="mb-0">- 주차별 & 최종 보고서 관리 </br>
+                                                    - '오픈소스에 직접 기여하기' 페이지 개발</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Testimonial section-->
+                        <div class="py-5 bg-light">
+                            <div class="container px-5 my-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-10">
+                                        <div class="text-center">
+                                            <div class="fs-4 mb-4 fst-italic">"초보자를 위한 git & gitHub 사용 설명 웹 페이지 개발"</div>
+                                            <div class="fw-bold">
+                                                초보자들은 github 사용법을 몰라서 어려움을 겪고, 단순히 ‘git add’, ‘git commit’, ‘git push’만 사용하는 경우가 많다. 또한, conflict가 생겼을 때 원인을 파악하지 못해서 directory를 삭제하고 다시 clone을 한다거나, 함부로 사용하면 위험한 ‘--force’까지 사용하는 경우가 있다. 이것은 git의 명령어와 github의 PR 등의 사용법을 제대로 모르는 상태로 프로젝트를 진행하기 때문이다.
+                                                이에 따라 본 프로젝트에서는 초보자들을 위한 git & gitHub 사용법을 알려주는 웹사이트를 개발하고자 한다. 더 나아가 gitHub으로 어떻게 협업이 이뤄지는 지 issue, PR 등의 다양한 기능들과 convention들을 알아보고 활용해본다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog preview section-->
+                        <section class="py-5">
+                            <div class="container px-5 my-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div>
+                                        <div class="text-center">
+                                            <h2 class="fw-bolder mb-3">협업 과정</h2>
+                                            <p class="lead fw-normal text-muted mb-5">페이지를 개발하기 위해 HTML, CSS, JS의 기초 문법들을 학습하고 GIT을 통해 협업을 진행하였다. </br>
+                                            github에서는 페이지 내용을 작성하면서 얻은 지식을 활용하고자 branch, PR, Issue 기능을 다양하게 사용하였다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gx-5">
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <img class="card-img-top" src="./assets/imgs/br.png" alt="..." />
+                                            <div class="card-body p-4">
+                                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Branch</div>
+                                                <a class="text-decoration-none link-dark stretched-link" href="sub2-1.html"><h5 class="card-title mb-3">Working on branch</h5></a>
+                                                <p class="card-text mb-0">- develop 브랜치 생성</br>
+                                                    - develop 브랜치에서 분기</br>
+                                                    -> 개인별로 하나의 브랜치를 생성</br>
+                                                    - 각자 브랜치에서 작업</br>
+                                                    - rebase, merge 사용하여 합침</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <img class="card-img-top" src="./assets/imgs/pr.png" alt="..." />
+                                            <div class="card-body p-4">
+                                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">PR</div>
+                                                <a class="text-decoration-none link-dark stretched-link" href="sub4-2.html"><h5 class="card-title mb-3">Working on PR</h5></a>
+                                                <p class="card-text mb-0">- 각자 브랜치에서 작업</br>
+                                                    - git add, git commit -m, git push 명령어 사용</br>
+                                                    - Pull Request 생성</br>
+                                                    - 나머지 팀원들 PR 검토</br>
+                                                    -> 승인 여부 결정</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-5">
+                                        <div class="card h-100 shadow border-0">
+                                            <img class="card-img-top" src="./assets/imgs/issue.png" alt="..." />
+                                            <div class="card-body p-4">
+                                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Issue</div>
+                                                <a class="text-decoration-none link-dark stretched-link" href="sub4-1.html"><h5 class="card-title mb-3">Working on Issue</h5></a>
+                                                <p class="card-text mb-0">- 각자 개인별 Issue 생성</br>
+                                                    - 각 Issue는 목적, 작업 상세 내용, </br>
+                                                    &nbsp;&nbsp;참고 사항으로 구성</br>
+                                                    - 작업 상세 내용은 체크리스트 사용</p>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </main>
             </div>

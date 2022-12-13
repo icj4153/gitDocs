@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Git Docs</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Git Docs</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Title 1</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 1
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Title 2</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 2
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="sub2-1.html">First</a>
+                                    <a class="nav-link" href="sub2-2.html">Second</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                                브랜치(Branch)
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link" href="sub3-1.html">Branch 소개</a>
+                                    <a class="nav-link" href="sub3-2.html">Branch 종류</a>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Title 3</div>
+                            <a class="nav-link" href="sub4.html">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 4
+                            </a>
+                            <a class="nav-link" href="sub5.html">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 5
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="p-5 mb-4 text-light text-center bg-dark">
+                        <div class="container-fluid py-5">
+                          <h1 class="display-5 fw-bold">
+                            브랜치(Branch)란?
+                          </h1>
+                          <p class="fs-5 text-center">
+                            소프트웨어를 개발할 때에 개발자들은 동일한 소스코드를 함께 공유하고 다룬다.<br />
+                            동일한 소스코드에서 어떤 개발자는 버그를 수정하고, 
+                            다른 개발자는 새로운 기능을 만들어 낸다. <br /> 
+                            여러 사람이 같은 소스코드에서 동시에 작업을 하면 서로 다른 버전의 코드가 만들어진다. <br /> 
+                            이 때, 여러 개발자들이 동시에 다양한 작업을 할 수 있게 만들어 주는 기능이 바로 브랜치이다. <br /> 
+                            브랜치는 각자 독립적인 공간을 만들어서 자유롭게 코드를 개발할 수 있게 해준다. <br /> 
+                            이렇게 각자 개발한 코드는 나중에 merge나 rebase 과정을 통해 하나의 코드로 합쳐진다. <br /> 
+
+                          </p>
+                        </div>
+                      </div>
+                      <div class="px-4 py-3 my-5 text-left">
+                        <h1 class="b">브랜치 생성방법</h1>
+                        <div class="col-lg-6 text-left">
+
+                          <h5 class="fw-bold lead mb-3 mt-5"> 1. 브랜치 확인하기</h5>
+                          <h6 class="fw-bold"> &nbsp; 1) 현재 내가 위치한 branch 확인</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git branch</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git status</h6>                          
+                          <h6 class="fw-bold"> &nbsp; 2) 원격 저장소의 브랜치 확인</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git branch -r </h6>
+                          <h6 class="fw-bold"> &nbsp; 3) 브랜치의 마지막 커밋 메세지 확인</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git branch -v </h6>
+
+                          <h5 class="fw-bold lead mb-3 mt-5"> 2. 브랜치 생성 및 이동</h5>
+                          <h6 class="fw-bold"> &nbsp; 2.1 첫번째 방법</h6>
+                          <h6 class="fw-bold"> &nbsp; 1) Branch 생성하기</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git branch [브랜치명]</h6>                          
+                          <h6 class="fw-bold"> &nbsp; 2) 생성한 Branch로 이동하기</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git checkout [브랜치명] </h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git switch [브랜치명] </h6>
+                          <h6 class="fw-bold mt-3"> &nbsp; 2.12 두번째 방법</h6>
+                          <h6 class="fw-bold"> &nbsp; 1) 브랜치를 새로 만들면서 브랜치 변경</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git checkout -b [브랜치명]</h6> 
+                          <h6> &nbsp; &nbsp; &nbsp; -  git switch -c [브랜치명]</h6>
+
+                          <h5 class="fw-bold lead mb-3 mt-5"> 3. branch 삭제</h5>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git branch -d [브랜치명]</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git branch -D [브랜치명]</h6>
+                          <h6> &nbsp; &nbsp; &nbsp; -  git push origin --delete [브랜치명]</h6> 
+
+
+                        </div>
+                      </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

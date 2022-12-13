@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Git Docs</title>
+	<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+		<!-- Navbar Brand-->
+		<a class="navbar-brand ps-3" href="index.html">Git Docs</a>
+		<!-- Sidebar Toggle-->
+		<button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+				class="fas fa-bars"></i></button>
+	</nav>
+	<div id="layoutSidenav">
+		<div id="layoutSidenav_nav">
+			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+				<div class="sb-sidenav-menu">
+					<div class="nav">
+						<div class="sb-sidenav-menu-heading">Title 1</div>
+						<a class="nav-link" href="index.html">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 1
+						</a>
+						<div class="sb-sidenav-menu-heading">Title 2</div>
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
+							aria-expanded="false" aria-controls="collapseLayouts">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 2
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link" href="sub2-1.html">First</a>
+								<a class="nav-link" href="sub2-2.html">Second</a>
+							</nav>
+						</div>
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+							aria-expanded="false" aria-controls="collapsePages">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 3
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+								<a class="nav-link" href="sub3-1.html">First</a>
+								<a class="nav-link" href="sub3-2.html">Second</a>
+							</nav>
+						</div>
+						<div class="sb-sidenav-menu-heading">Title 3</div>
+						<a class="nav-link" href="sub4.html">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 4
+						</a>
+						<a class="nav-link" href="sub5.html">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 5
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="layoutSidenav_content">
+			<main>
+        <div class="p-5 mb-4 text-light text-center bg-dark">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">
+                깃허브(GitHub)으로 협업하기 : Issue란?
+              </h1>
+              <p class="fs-5 text-center">
+                이번 글에서는 깃허브(Github)으로 협업할 때 사용하는 Issues에 대해서 설명한다. <br />
+								그리고 Issue 사용법 및 활용법에 대해서 설명한다.
+              </p>
+            </div>
+				</div>
+
+        <div class="px-4 py-3 my-5">
+          <h1 class="b">1. Issues란?</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+								모든 활동 내역에 대해서 issue를 등록하고, 등록한 issue 기반으로 작업을 진행한다. <br />
+              </p>
+              <ol style="font-size: 1.25rem">
+                <li>프로젝트에서 발생하는 모든 문제를 관리할 수 있도록 돕는다.</li>
+                <!-- <p class="lead mb-4">
+                  무언가를 개선하려면 우선 그 대상을 잘 알아야 한다. 어느 정도의
+                  사용 경험은 있어야 해당 프로젝트가 가진 이슈를 올바르게 파악할
+                  수 있다. 경험 많은 기여자라면 저장소에 올라온 Issue 항목들
+                  가운데 원하는 항목을 골라 작업할 수 있겠지만, 그렇지 않다면
+                  일단 손에 익은 프로젝트부터 살펴보는 것이 낫다고 생각한다.
+                </p> -->
+                <li>프로젝트의 작업, 개선 사항 및 버그 추적하는 좋은 방법으로 사용된다.</li>
+								<!-- <li> Issue 사용 순서</li> -->
+	                <!-- <p class="lead mb-4">1. issue 생성 <br /> 2. label(라벨) <br/> 3. assignee(담당자) 등록 <br/> 4. 해결 후 issue close</p> -->
+                <li>issue의 오남용을 막기 위해 issue template을 활용할 수 있다.</li>
+                <li>ex) 버그 발생, 개발, 풀 리퀘스트 등</li>
+              </ol>
+              <!-- <p class="lead mb-4">
+                초심자 입장에서 가장 신속하면서도 간편하게 오픈 소스 기여를
+                시작할 수 있는 방법은 바로
+                <b>내가 현재 사용 중인 프로젝트</b>내가 현재 사용 중인
+                프로젝트를 고르는 것이다. 해당 프로젝트를 직접 사용해 봤다면
+                개선이 필요한 부분도 빠르게 찾아낼 수 있고, 내가 개선한 작업의
+                효과를 내 환경에서 즉시 체감할 수 있기에 개인적인 효용감이 무척
+                크다.
+              </p> -->
+            </div>
+        </div>
+
+        <div class="px-4 py-3 my-5">
+          <h1 class="b">2. Issue 사용법</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+								Issue 생성하고, label(라벨)과 assignee(담당자) 선택한다. 완료 후 issue close한다. <br />
+              </p>
+              <ol style="font-size: 1.25rem">
+                <li>Issue 생성하기</li>
+                <p class="lead mb-4">
+									가장 기본적인 생성 방법이다. <br />
+									Issue -> New issue를 선택한다.
+									<img style="width:672px" src="./assets/imgs/issue_1-1.png" />
+									Title, comment를 작성하고 Submit new issue하면 생성 완료된다.
+									<img style="width:672px" src="./assets/imgs/issue_1-1.png" />
+                </p>
+
+								<p class="lead mb-4">
+									현재 존재하는 PR의 코드로도 Issue 생성 가능하다.
+									<img style="width:672px" src="./assets/imgs/issue_2.png"/>
+								</p>
+
+								<p class="lead mb-4">
+									PR의 code review로 남긴 comment도 issue로 생성 가능하다.
+									<img style="width:672px" src="./assets/imgs/issue_3-1.png"/>
+									<p></p>
+									<img style="width:672px" src="./assets/imgs/issue_3-2.png"/>
+									<p></p>
+									<img style="width:672px" src="./assets/imgs/issue_3-3.png"/>
+								</p>
+
+
+
+
+                <li>Issue Label 설정하기</li>
+								<p class="lead mb-4">
+									Issue가 많아지면 관리하기가 힘들어진다. 이러한 문제점 개선을 위해 Label 기능을 활용할 수 있다.
+									Labeling을 통해 이슈를 검색, 필터링할 수 있다. <br />
+									사용 예시
+									<img style="width:672px" src="./assets/imgs/issue_label_example_1.png" />
+									<p></p>
+									<img style="width:672px" src="./assets/imgs/issue_label_example_2.png" />
+								</p>
+
+
+								<li>Issue 완료 후 close하기</li>
+								<p class="lead mb-4">
+									<img style="width:400px" src="./assets/imgs/issue_closed.png" />
+								</p>
+
+              </ol>
+            </div>
+        </div>
+
+			</main>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>

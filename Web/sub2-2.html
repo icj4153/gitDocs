@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Git Docs</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Git Docs</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Title 1</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 1
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Title 2</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 2
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="sub2-1.html">First</a>
+                                    <a class="nav-link" href="sub2-2.html">Second</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 3
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link" href="sub3-1.html">First</a>
+                                    <a class="nav-link" href="sub3-2.html">Second</a>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Title 3</div>
+                            <a class="nav-link" href="sub4.html">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 4
+                            </a>
+                            <a class="nav-link" href="sub5.html">
+                                <div class="sb-nav-link-icon"></div>
+                                SubTitle 5
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="p-5 mb-4 text-light text-center bg-dark">
+                        <div class="container-fluid py-5">
+                          <h1 class="display-5 fw-bold">
+                            Github에 대한 설명 및 간단한 사용법 정리
+                          </h1>
+                          <p class="fs-5 text-center">
+                            이번 글에서는 Github가 무엇인지, Github의 장점, 그리고 Github를 통해 수행할 수 있는 것에는 무엇이 있는지, Github의 기본적인 용어에는 어떤 것이 있는지에 대해 안내한다. <br />
+                          </p>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 my-5">
+                        <h1 class="mt-4">Github</h1>
+                        <h1 class="mt-4">Github란?</h1>
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+                        <ul type="disc">
+                            <li><h6 class="mt-4">분산 버전 컨트롤 소프트웨어 Git을 기반으로 소프트웨어 개발 및 버전 제어를 위한 인터넷 호스팅 서비스이다. </h6></li>
+                            <li><h6 class="mt-4">Git의 분산 버전 제어와 액세스 제어, 버그 추적, 소프트웨어 기능 요청, 작업 관리, 지속적인 통합을 제공한다.</h6></li>
+                            <li><h6 class="mt-4">일반적으로 오픈소스 소프트웨어 개발 프로젝트를 호스팅하는 데 사용된다.</h6></li>
+                            <li><h6 class="mt-4">표준 Git 명령줄 인터페이스를 사용하여 액세스하고 관리할 수 있다.</h6></li>
+                            <li><h6 class="mt-4">사용자가 사이트에서 공개 리포지토리를 탐색할 수 있도록 한다.</h6></li>
+                        </ul>
+                        <h1 class="mt-4">Github의 장점</h1>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">원하는 시점으로 복원 가능</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">작업한 내역을 타임라인 순으로 확인 가능</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">수정한 내용에 대한 문서화 용이</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">브랜치 생성 및 병합 용이</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">여러 사람이 하나의 소스 작업 시 충돌 방지 및 해결</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">누가 어떤 작업을 수행했는지 확인 가능</h6></li>
+                        </ul>
+                        <h1 class="mt-4">Github를 통해...</h1>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">원격 저장소에서 Git을 사용할 수 있다.</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">지역 저장소를 백업할 수 있다.</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">협업 프로젝트에서 사용할 수 있다.</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">자신의 개발 이력을 남길 수 있다.</h6></li>
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">다른 사람의 소스를 살펴볼 수 있고, 오픈 소스에 참여할 수도 있다.</h6></li>
+                        </ul>
+                        <h1 class="mt-4">Github 기본 용어</h1>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">저장소(Repository)</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>프로젝트가 살고 있는 저장공간.
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li> 주로 'repo'라고 줄여서 사용한다.
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li> 이 저장소 안에 코드, 텍스트, 이미지를 저장할 수 있다.
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">버전 관리(Version Control)</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>팀 단위로 프로젝트를 운영할 때 필수적인 기능
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>다수의 사용자가 하나의 페이지를 수정해도 각 사용자별로 수정 내용을 저장
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>모든 시점의 '스냅 샷'을 저장하기 때문에 겹쳐 쓸 일이 없다.
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">커밋(Commit)</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>개발 단계별로 깃발을 꽂는 행위
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>간단한 메모를 남겨서 이 지점까지 어떤개발을 했다는 표시를 할 수 있다.
+                        </ul>
+                        <ul type="disc">
+                            <li><h6 class="mt-4">브랜치(Branch)</h6></li>
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>자신이 진행하는 프로젝트의 브랜치를 따서 자기의 버전을 만드는 것
+                        </ul>
+                        <ul style='list-style-type:circle;list-style-position:inside'>
+                            <li>작업을 마무리하면 프로젝트 메인 디렉토리인 master에 브랜치를 merge한다.
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

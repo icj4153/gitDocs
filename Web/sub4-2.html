@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Git Docs</title>
+	<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+		<!-- Navbar Brand-->
+		<a class="navbar-brand ps-3" href="index.html">Git Docs</a>
+		<!-- Sidebar Toggle-->
+		<button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+				class="fas fa-bars"></i></button>
+	</nav>
+	<div id="layoutSidenav">
+		<div id="layoutSidenav_nav">
+			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+				<div class="sb-sidenav-menu">
+					<div class="nav">
+						<div class="sb-sidenav-menu-heading">Title 1</div>
+						<a class="nav-link" href="index.html">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 1
+						</a>
+						<div class="sb-sidenav-menu-heading">Title 2</div>
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
+							aria-expanded="false" aria-controls="collapseLayouts">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 2
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link" href="sub2-1.html">First</a>
+								<a class="nav-link" href="sub2-2.html">Second</a>
+							</nav>
+						</div>
+						<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+							aria-expanded="false" aria-controls="collapsePages">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 3
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+								<a class="nav-link" href="sub3-1.html">First</a>
+								<a class="nav-link" href="sub3-2.html">Second</a>
+							</nav>
+						</div>
+						<div class="sb-sidenav-menu-heading">Title 3</div>
+						<a class="nav-link" href="sub4.html">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 4
+						</a>
+						<a class="nav-link" href="sub5.html">
+							<div class="sb-nav-link-icon"></div>
+							SubTitle 5
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="layoutSidenav_content">
+			<main>
+				<div class="p-5 mb-4 text-light text-center bg-dark">
+					<div class="container-fluid py-5">
+						<h1 class="display-5 fw-bold">
+							깃허브(GitHub)로 협업하기 : PR(Pull Request)란?
+						</h1>
+						<p class="fs-5 text-center">
+							이번 글에서는 깃허브(Github)로 협업할 때 사용하는 PR(Pull Request)에 대해서 설명한다. <br />
+						</p>
+					</div>
+				</div>
+
+
+				<div class="px-4 py-3 my-5">
+					<h1 class="b">1. Pull Request란?</h1>
+					<div class="col-lg-6 mx-auto">
+						<p class="lead mb-4">
+							github repository branch에 push한 내역들, 변경 사항을 다른 사람들에게 알리는 것을 의미한다. <br />
+							main branch에 merge 전, 변경 사항에 대해 다른 사람들과 논의, 검토할 수 있다. <br />
+							다른 사람의 commit을 볼 일이 많지 않고 main branch merge에서야 확인하게 되는데, PR은 당장 merge하지 않는다는 규칙으로, 코드에 신경 쓰게 되고 어떤 작업이 언제
+							적용되었는 지 확인할 수 있다. <br />
+							따라서 코드 충돌(conflict)을 줄일 수 있다.
+						</p>
+						<ol style="font-size: 1.25rem">
+							<li>code review를 할 수 있다.</li>
+							<p class="lead mb-4">
+								main branch에 merge하기 전, 변경 사항에 대해 다른 사람들과 논의 및 검토할 수 있다.
+							</p>
+							<li>충돌(conflict) 방지할 수 있다.</li>
+							<p class="lead mb-4">
+								다른 사람의 commit을 볼 일이 많지 않고 main branch에 merge할 때 되어서야 확인하는 경우가 많다. <br />
+								PR은 당장 merge 하지 않는다는 규칙으로, 코드에 신경 쓰게 되고 어떤 작업이 언제 적용되었는 지 확인할 수 있다.
+							</p>
+						</ol>
+						<!-- <p class="lead mb-4">
+                초심자 입장에서 가장 신속하면서도 간편하게 오픈 소스 기여를
+                시작할 수 있는 방법은 바로
+                <b>내가 현재 사용 중인 프로젝트</b>내가 현재 사용 중인
+                프로젝트를 고르는 것이다. 해당 프로젝트를 직접 사용해 봤다면
+                개선이 필요한 부분도 빠르게 찾아낼 수 있고, 내가 개선한 작업의
+                효과를 내 환경에서 즉시 체감할 수 있기에 개인적인 효용감이 무척
+                크다.
+              </p> -->
+					</div>
+				</div>
+
+				<div class="px-4 py-3 my-5">
+					<h1 class="b">2. PR(Pull Request) 사용법</h1>
+					<div class="col-lg-6 mx-auto">
+						<p class="lead mb-4">
+							작업한 branch에 push한 이후 합치고자 하는 branch로 PR을 올린다. <br />
+							그리고 code review를 진행하고 이상이 없다면 merge한다.
+						</p>
+						<ol style="font-size: 1.25rem">
+							<li>PR 생성하기 전</li>
+							<p class="lead mb-4">
+								분기한 branch에서 작업한 내용들을 git add, git commit한다. <br />
+								그리고 분기한 branch에 push한다.
+								<!-- <img style="width:672px" src="./assets/imgs/issue_1-1.png" /> -->
+							</p>
+
+							<li>PR 생성하기</li>
+							<p class="lead mb-4">
+								Compare & pull request <br />
+
+								base branch, compare branch를 선택한다. <br />
+
+								내용을 작성한다. <br />
+
+								Create pull request <br />
+
+								PR 생성 후에 수정사항이 생겨도 같은 branch에 push하면 자동으로 반영된다.
+
+							</p>
+
+							<li>Code Review</li>
+							<p class="lead mb-4">
+								PR review에서 comment를 달 수 있다. <br />
+
+								Files changed 탭에 들어가서 한 줄마다 comment 등록도 가능하다.
+							</p>
+
+							<li>Merge</li>
+							<p class="lead mb-4">
+								최종적으로 승인하는 단계이다. <br />
+
+								Merge pull request -> Confirm merge를 한다.
+							</p>
+
+							<li>Delete branch</li>
+							<p class="lead mb-4">
+								해당 브랜치 개발이 완료되었으면 브랜치를 삭제한다.
+							</p>
+
+						</ol>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
